@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orçamento pessoal</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <header id="cabecalho">
+
+        <img src="imagens/money.png" id="imagMenu" alt="">
+        <input type="button" value="" id="imagOpcoes">
+
+        <div class="clear"></div>
+        <nav id="navegacao">
+            
+            <ul id="menu">
+                <li><a href="index.html">Cadastro</a></li>
+                <li><a href="consulta.html">Consulta</a></li>
+                <div class="clear"></div>
+            </ul>
+            
+        </nav>
+        
+    </header>
+
+    <div id="conteudo">
+        <h1>Registro de novas despesas</h1>
+
+        <form action="">
+            <select name="ano" id="ano" class="opcoes" >
+                <option value="ano" disabled selected>ano</option>
+                <option value="2022">2022</option>
+                <option value="2021">2021</option>
+                <option value="2020">2020</option>
+                <option value="2019">2019</option>
+                <option value="2018">2018</option>
+                <option value="2017">2017</option>
+                <option value="2016">2016</option>
+                <option value="2015">2015</option>
+                <option value="2014">2014</option>
+                
+            </select>
+
+            <select name="mes" id="mes" class="opcoes">
+                <option value="mes" disabled selected>Mês</option>
+                <option value="janeiro">Janeiro</option>
+                <option value="fevereiro">Fevereiro</option>
+                <option value="marco">Marco</option>
+                <option value="abril">Abril</option>
+                <option value="maio">Maio</option>
+                <option value="junho">Junho</option>
+                <option value="julho">Julho</option>
+                <option value="agosto">Agosto</option>
+                <option value="setembro">Setembro</option>
+                <option value="outubro">Outubro</option>
+                <option value="novenbro">Novenbro</option>
+                <option value="dezembro">Dezembro</option>
+            </select>
+
+            <input type="number" max="31" min="1" name="dia" id="dia" placeholder="Dia" class="opcoes">
+
+            <select name="tipo" id="tipo" class="opcoes2">
+                <option value="tipo" selected disabled>Tipo</option>
+                <option value="educacao">Educação</option>
+                <option value="alimentacao">Alimentação</option>
+                <option value="lazer">Lazer</option>
+                <option value="saude">Saúde</option>
+                <option value="transporte">Transporte</option>
+            </select>
+             <br>
+
+            <input type="text" name="descricao" id="descricao" class="opcoes2" placeholder="Descrição">
+            <input type="number" step="1.00" min="0" name="dinheiro" id="valor" class="opcoes" placeholder="Valor">
+
+            <input type="button" value="" id="salvar" onclick="cadastrarDespesa()">
+            
+            
+        </form>
+    </div>
+    
+</body>
+</html>
+
+
+
